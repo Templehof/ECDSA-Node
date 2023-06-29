@@ -3,7 +3,6 @@ import { toHex } from "ethereum-cryptography/utils";
 
 function Wallet({ address, setAddress, balance, privateKey, setPrivateKey }) {
   async function onPrivateKeyChange(evt) {
-    console.log("Kek");
     const key = evt.target.value;
     setPrivateKey(key);
     try {
